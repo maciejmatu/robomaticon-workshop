@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <title>Robomaticon front-end</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./assets/logo.svg"
+          alt="splitt app logo"
+        />
+      </header>
+
+      <form class="form" id="foodForm">
+        <input
+          name="label"
+          class="form__input form__input--long"
+          placeholder="Food name"
+          required
+        />
+        <input
+          name="value"
+          type="number"
+          class="form__input"
+          placeholder="PLN"
+          required
+        />
+        <button type="submit" class="form__button">Add Expense</button>
+      </form>
+
+      <ul class="items-list">
+        <li class="expense">
+          <img src="./assets/icon-coin.svg" alt="" />
+
+          <div class="expense__details">
+            <h3 class="expense__title">Some Thai - Green curry</h3>
+
+            <time class="expense__time" datetime="2019-03-09 14:54:39.929">
+              09.03.2019 - 14:54
+            </time>
+          </div>
+
+          <div class="expense__value">45.00 PLN</div>
+        </li>
+
+        <li class="expense">
+          <img src="./assets/icon-coin.svg" alt="" />
+
+          <div class="expense__details">
+            <h3 class="expense__title">Burger Queen - Fries</h3>
+
+            <time class="expense__time" datetime="2019-03-09 14:54:39.929">
+              09.03.2019 - 14:54
+            </time>
+          </div>
+
+          <div class="expense__value">12.25 PLN</div>
+        </li>
+      </ul>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

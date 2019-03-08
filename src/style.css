@@ -1,0 +1,111 @@
+/* ================= GENERAL ================= */
+body {
+  background-color: #f6f8f9;
+
+  background-image: url("./assets/background-shape.svg");
+  background-size: 90% 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  font-family: "Roboto";
+}
+
+.container {
+  margin: 50px auto;
+  width: 500px;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 0 #cecece;
+  background-color: white;
+}
+
+.items-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* ================= HEADER ================= */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ================= FORM ================= */
+.form {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid #b9b9b9;
+  padding: 10px 0;
+  outline: none;
+  font-size: 16px;
+  transition: border-bottom-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.form__input--long {
+  flex-grow: 1;
+}
+
+.form__input:focus {
+  border-bottom-color: #4e4e4e;
+}
+
+.form__button {
+  border-radius: 30px;
+  background-color: #1c4bfb;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  box-shadow: 0px 6px 15px 0 #b9b9b9;
+  outline: none;
+}
+
+/* ================= EXPENSE ================= */
+.expense {
+  border-radius: 6px;
+  box-shadow: 0 0 15px 0 #cecece;
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.expense:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.expense__title {
+  margin: 0;
+  font-weight: 500;
+  color: #1c4bfb;
+}
+
+.expense__details {
+  flex-grow: 1;
+  padding: 0 16px;
+}
+
+.expense__value {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.expense__time {
+  font-weight: 300;
+  font-size: 14px;
+  color: #b3b3b3;
+}
